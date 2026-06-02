@@ -1,8 +1,16 @@
-import React from 'react'
+import { useState } from "react"
+import Dashboard from "./components/Dashboard"
+import Navbar from "./components/Navbar"
+
+
 
 const App = () => {
+  const [profileName, setProfileName] = useState("John")
   return (
-    <div>Hello</div>
+    <>
+      <Navbar />
+      <Dashboard />
+    </>
   )
 }
 
