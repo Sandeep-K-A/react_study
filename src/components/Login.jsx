@@ -8,6 +8,7 @@ const Login = () => {
         password: "",
         recaptcha: ""
     }
+    console.log("login")
     return (
         <div className="flex min-h-screen items-center justify-center bg-gray-100">
             <Formik initialValues={initialValues} validationSchema={loginSchema} onSubmit={(values) => { console.log(values) }}>
